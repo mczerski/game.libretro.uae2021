@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="game.libretro.uae"
-		name="Commodore - Amiga (PUAE)"
+<addon id="game.libretro.uae2021"
+		name="Commodore - Amiga (PUAE 2021)"
 		version="5.3.1.89"
 		provider-name="UAE Team">
 	<requires>
@@ -22,17 +22,17 @@
 	<extension point="xbmc.addon.metadata">
 		<license>GPLv2</license>
 		<platform>@PLATFORM@</platform>
-		<source>https://github.com/kodi-game/game.libretro.uae</source>
+		<source>https://github.com/kodi-game/game.libretro.uae2021</source>
 		<assets>
 			<icon>resources/icon.png</icon>
 		</assets>
-		<summary lang="da_DK">Commodore - Amiga (PUAE)</summary>
-		<summary lang="en_GB">Commodore - Amiga (PUAE)</summary>
-		<summary lang="es_ES">Commodore - Amiga (PUAE)</summary>
-		<summary lang="ga">Commodore - Amiga (PUAE)</summary>
-		<summary lang="it_IT">Commodore - Amiga (PUAE)</summary>
-		<summary lang="sv_SE">Commodore - Amiga (PUAE)</summary>
-		<summary lang="zh_CN">Commodore - Amiga (PUAE)</summary>
+		<summary lang="da_DK">Commodore - Amiga (PUAE 2021)</summary>
+		<summary lang="en_GB">Commodore - Amiga (PUAE 2021)</summary>
+		<summary lang="es_ES">Commodore - Amiga (PUAE 2021)</summary>
+		<summary lang="ga">Commodore - Amiga (PUAE 2021)</summary>
+		<summary lang="it_IT">Commodore - Amiga (PUAE 2021)</summary>
+		<summary lang="sv_SE">Commodore - Amiga (PUAE 2021)</summary>
+		<summary lang="zh_CN">Commodore - Amiga (PUAE 2021)</summary>
 		<description lang="da_DK">UAE står for Ubiquitous Amiga Emulator.[CR][CR]De fleste spil kræver en version af Amiga Kickstart ROM. Nogle gamle spil vil dog fungere med den indbyggede ROM-emulering.</description>
 		<description lang="de_DE">UAE steht für den Ubiquitous Amiga Emulator[CR][CR]Die meisten Spiele benötigen eine Version des Amiga Kickstart-ROM. Einige alte Spiele funktionieren jedoch auch mit der eingebauten ROM-Emulation.</description>
 		<description lang="en_GB">UAE stands for the Ubiquitous Amiga Emulator.[CR][CR]Most games require a version of the Amiga Kickstart ROM. However, some old games will work with the built-in ROM emulation.</description>

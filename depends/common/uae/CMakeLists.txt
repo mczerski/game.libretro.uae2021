@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(uae)
+project(uae2010)
 
 list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR})
 
@@ -23,7 +23,7 @@ else()
 endif()
 
 set(LIBRETRO_BINARY_DIR .)
-set(LIBRETRO_SONAME puae_libretro${CMAKE_SHARED_LIBRARY_SUFFIX})
+set(LIBRETRO_SONAME puae2021_libretro${CMAKE_SHARED_LIBRARY_SUFFIX})
 set(LIBRETRO_JNISONAME libretro${CMAKE_SHARED_LIBRARY_SUFFIX})
 
 if(CMAKE_BUILD_TYPE MATCHES Debug)
@@ -84,7 +84,7 @@ elseif(CORE_SYSTEM_NAME STREQUAL osx)
                     )
 elseif(CORE_SYSTEM_NAME STREQUAL ios OR CORE_SYSTEM_NAME STREQUAL darwin_embedded)
   if(CORE_PLATFORM_NAME STREQUAL ios)
-    set(LIBRETRO_SONAME puae_libretro_ios${CMAKE_SHARED_LIBRARY_SUFFIX})
+    set(LIBRETRO_SONAME puae2021_libretro_ios${CMAKE_SHARED_LIBRARY_SUFFIX})
     if(CPU STREQUAL arm64)
       set(PLATFORM ios-arm64)
     else()
@@ -99,7 +99,7 @@ elseif(CORE_SYSTEM_NAME STREQUAL ios OR CORE_SYSTEM_NAME STREQUAL darwin_embedde
                                                   platform=${PLATFORM}
                                                   )
   elseif(CORE_PLATFORM_NAME STREQUAL tvos)
-    set(LIBRETRO_SONAME puae_libretro_tvos${CMAKE_SHARED_LIBRARY_SUFFIX})
+    set(LIBRETRO_SONAME puae2021_libretro_tvos${CMAKE_SHARED_LIBRARY_SUFFIX})
     set(BUILD_COMMAND IOSSDK=${CMAKE_OSX_SYSROOT} $(MAKE)
                                                   -C .
                                                   -f Makefile
@@ -155,4 +155,4 @@ externalproject_add(${PROJECT_NAME}
 
 # install the generated shared library
 install(FILES ${PROJECT_SOURCE_DIR}/${LIBRETRO_BINARY_DIR}/${LIBRETRO_SONAME}
-        DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/libretro RENAME puae_libretro${CMAKE_SHARED_LIBRARY_SUFFIX})
+        DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/libretro RENAME puae2021_libretro${CMAKE_SHARED_LIBRARY_SUFFIX})
